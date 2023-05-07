@@ -12,10 +12,7 @@ class Node:
         self.data = data
         self.next_node = next_node
 
-    def pop(self):
-        a = self.top
-        a = self.next_node
-        return self.top
+
 class Stack:
     """Класс для стека"""
 
