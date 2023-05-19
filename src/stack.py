@@ -1,4 +1,3 @@
-
 class Node:
     """Класс для узла стека"""
 
@@ -44,4 +43,18 @@ class Stack:
             data = self.top.data
             self.top = self.top.next_node
             return data
+
+
+    def __str__(self):
+        """
+        Метод для получения строкового представления стека
+
+        :return: строковое представление стека
+        """
+        result = ""
+        current = self.top
+        while current is not None:
+            result += str(current.data) + "\n"
+            current = current.next_node
+        return result.strip()
 
